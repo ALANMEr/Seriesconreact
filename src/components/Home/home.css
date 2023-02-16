@@ -1,0 +1,90 @@
+.home {
+    height: 100vh;
+    color: #fff;
+    background-color: #cd5c5cda;
+    position: relative;
+}
+
+.home:before {
+    content: "";
+    background: url("../../image/imageAbout.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.home-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.view-details-home-button {
+    background-color: #F7D010;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.view-details-home-button:hover {
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+.theme-change {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #cd5c5c;
+    right: 0;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    position: fixed;
+    top: 150;
+    margin-top: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .theme-change {
+        display: none;
+    }
+}
+
+
+.theme-icon {
+
+    animation: rotation infinite 5s linear;
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
