@@ -13,7 +13,7 @@ export const Primo = () => {
         <div className='container testimonial-section" input-group mb-3 .container-sm container text-center w-50 p-3 '>
             <div className="row align-self-end">
                 <input
-                    type="number" class="form-control"
+                    type="number" className="form-control"
                     placeholder="Escribe número"
                     aria-label="Username"
                     aria-describedby="addon-wrapping"

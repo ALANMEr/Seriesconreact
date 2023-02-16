@@ -142,20 +142,20 @@ const Feedback = () => {
             <div className="feedbck-slide">
                 <Slider {...settings}>
                     {data.map((item, index) => (
-                     
-                            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <div className="card content-slider" key={index}>
-                                    <img
-                                        src={item.img}
-                                        alt="slider images"
-                                        className="center-image"
-                                    />
-                                    <p>{item.content}</p>
-                                    <h4>{item.name}</h4>
-                                    <p>{item.position}</p>
-                                </div>
+
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12" key={index}>
+                            <div className="card content-slider">
+                                <img
+                                    src={item.img}
+                                    alt="slider images"
+                                    className="center-image"
+                                />
+                                <p>{item.content}</p>
+                                <h4>{item.name}</h4>
+                                <p>{item.position}</p>
                             </div>
-                     
+                        </div>
+
                     ))}
                 </Slider>
             </div>

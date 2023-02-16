@@ -7,7 +7,7 @@ export const Piramide = () => {
             <div className="row align-self-end">
 
                 <input
-                    type="number" class="form-control"
+                    type="number" className="form-control"
                     placeholder="Escribe número"
                     aria-label="Username"
                     aria-describedby="addon-wrapping"
@@ -21,29 +21,26 @@ export const Piramide = () => {
 
 }
 const Piramides = ({ nume }) => {
-
+    let piso = ' ';
     for (let i = 1; i <= nume; i++) {
-
+        piso = ' ';
         for (let j = 1; j <= nume; j++) {
             if (j < i) {
-                // return <h3> </h3>
-                console.log(" ")
+                piso = ' ';
             } else {
-                // return <h3>*</h3>
-                console.log("*")
+                piso = piso + '*';
             }
 
 
         }
+       console.log(piso)
 
-        console.log()
     }
-
 
     return (
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
-                {nume} Piramide serie:
+                Numeros Primos serie:  {piso}
             </div>
         </div>
     );

@@ -18,7 +18,7 @@ function Fibonacci() {
                 <br/>
                 <br />
                     <input
-                        type="number" class="form-control"
+                        type="number" className="form-control"
                         placeholder="Escribe número"
                         aria-label="Username"
                         aria-describedby="addon-wrapping"
