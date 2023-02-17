@@ -33,20 +33,7 @@ const Footer = () => {
                                         <AiOutlineInstagram size={25} />
                                     </p>
                                 </div>
-                                {/* <span className="footer-social-icons">
-                <p>
-                  <FaFacebookSquare size={30} />
-                </p>
-                <p>
-                  <AiFillTwitterSquare size={30} />
-                </p>
-                <p>
-                  <FaInstagramSquare size={30} />
-                </p>
-                <p>
-                  <BsLinkedin size={30} />
-                </p>
-              </span> */}
+                        
                             </div>
                         </div>
 
@@ -54,14 +41,12 @@ const Footer = () => {
                             <div className="footer-service">
                                 <h6 style={{ color: "white", marginTop: "20px" }}>Services</h6>
                                 <div className="footer-item">
-                                    <li>Product Sort</li>
-                                    <li>Media Marketing</li>
-
-                                    <li>Innovation</li>
+                    
+          
 
                                     <li>Technology</li>
 
-                                    <li>Environment</li>
+                        
                                 </div>
                             </div>
                         </div>
@@ -73,11 +58,7 @@ const Footer = () => {
                                 </h6>
                                 <div className="footer-item">
                                     <li>Log In</li>
-                                    <li>Media Marketing</li>
-
-                                    <li>My Account</li>
-
-                                    <li>Wish List</li>
+                            
 
                                     <li>FAQ</li>
                                 </div>
