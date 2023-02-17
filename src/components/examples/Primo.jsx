@@ -18,7 +18,7 @@ export const Primo = () => {
                     aria-label="Username"
                     aria-describedby="addon-wrapping"
                     min={0}
-                    value={lista}
+                    value={lista || ''}
                     onChange={(e) => setLista(e.target.value)}
                 />
                 <NPrimos lista={lista} />

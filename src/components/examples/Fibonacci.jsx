@@ -19,7 +19,7 @@ function Fibonacci() {
                     aria-label="Username"
                     aria-describedby="addon-wrapping"
                     min={0}
-                    value={num}
+                    value={num || ''}
                     onChange={(e) => setNum(e.target.value)}
                 />
                 <Fibonacchi num={num} />
