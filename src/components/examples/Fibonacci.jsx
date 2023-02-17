@@ -15,19 +15,20 @@ function Fibonacci() {
                     <h5>Series</h5>
                     <span className="line"></span>
                 </div>
-                <br/>
                 <br />
-                    <input
-                        type="number" className="form-control"
-                        placeholder="Escribe número"
-                        aria-label="Username"
-                        aria-describedby="addon-wrapping"
-                        value={num}
-                        onChange={(e) => setNum(e.target.value)}
-                    />
-                    <Fibonacchi num={num} />
-    
-          </div>
+                <br />
+                <input
+                    type="number" className="form-control"
+                    placeholder="Escribe número"
+                    aria-label="Username"
+                    aria-describedby="addon-wrapping"
+                    min={0}
+                    value={num}
+                    onChange={(e) => setNum(e.target.value)}
+                />
+                <Fibonacchi num={num} />
+
+            </div>
         </div>
     );
 }
@@ -47,7 +48,7 @@ const Fibonacchi = ({ num }) => {
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
                 {num} Fibonacchi serie: {fib.join(', ')}
-           </div>
+            </div>
         </div>
     );
 }

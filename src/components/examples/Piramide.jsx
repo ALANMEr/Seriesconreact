@@ -11,6 +11,7 @@ export const Piramide = () => {
                     placeholder="Escribe número"
                     aria-label="Username"
                     aria-describedby="addon-wrapping"
+                    min={0}
                     value={nume}
                     onChange={(e) => setNume(e.target.value)}
                 />

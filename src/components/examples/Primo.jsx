@@ -17,6 +17,7 @@ export const Primo = () => {
                     placeholder="Escribe número"
                     aria-label="Username"
                     aria-describedby="addon-wrapping"
+                    min={0}
                     value={lista}
                     onChange={(e) => setLista(e.target.value)}
                 />
