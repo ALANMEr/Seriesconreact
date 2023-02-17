@@ -23,25 +23,25 @@ export const Piramide = () => {
 const Piramides = ({ nume }) => {
     let piso = ' ';
     for (let i = 1; i <= nume; i++) {
-        piso = ' ';
+
         for (let j = 1; j <= nume; j++) {
             if (j < i) {
-                piso = ' ';
+                piso += " ";
+
             } else {
                 piso = piso + '*';
             }
 
-
         }
-       console.log(piso)
 
     }
 
     return (
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
-                Numeros Primos serie:  {piso}
+               Piramide serie: {piso}
             </div>
         </div>
     );
+
 }
