@@ -12,9 +12,9 @@ const App = () => {
     <>
       <Navbar />
       <Home />
-      <Fibonacci/>
+      <Piramide />
       <Primo/>
-      <Piramide/>
+      <Fibonacci />
       <Footer />
       <ScrollToTop smooth
         height='20'

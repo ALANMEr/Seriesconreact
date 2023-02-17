@@ -52,7 +52,9 @@ const NPrimos = ({ lista }) => {
     return (
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
-                Numeros Primos serie:  {ListaP.join(', ')}
+                <p>  Número agregado:{lista}  
+                <br/>
+                   Números primos serie:  {ListaP.join(', ')}</p>
             </div>
         </div>
     )

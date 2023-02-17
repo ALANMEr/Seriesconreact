@@ -3,9 +3,13 @@ import React, { useState } from 'react'
 export const Piramide = () => {
     const [nume, setNume] = useState();
     return (
-        <div className='container testimonial-section" input-group mb-3 .container-sm container text-center w-50 p-3  '>
+        <div className='container testimonial-section" input-group mb-3" .container-sm container text-center w-50 p-3  '>
             <div className="row align-self-end">
-
+                <br />    <br />
+                <div className="section_title">
+                    <h5>Series</h5>
+                    <span className="line"></span>
+                </div>
                 <input
                     type="number" className="form-control"
                     placeholder="Escribe número"
@@ -40,7 +44,13 @@ const Piramides = ({ nume }) => {
     return (
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
-               Piramide serie: {piso}
+
+
+                <p> Número agregado:  {nume}
+                    <br />
+                    Piramide serie: {piso}
+
+                </p>
             </div>
         </div>
     );

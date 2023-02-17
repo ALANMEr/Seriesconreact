@@ -9,14 +9,10 @@ function Fibonacci() {
     const [num, setNum] = useState();
 
     return (
-        <div className='container testimonial-section" input-group mb-3 .container-sm text-center w-50 p-3 ' id="about">
+
+
+        <div className='container testimonial-section" input-group mb-3 .container-sm container text-center w-50 p-3 ' id="about">
             <div className="row align-self-end">
-                <div className="section_title">
-                    <h5>Series</h5>
-                    <span className="line"></span>
-                </div>
-                <br />
-                <br />
                 <input
                     type="number" className="form-control"
                     placeholder="Escribe número"
@@ -30,6 +26,7 @@ function Fibonacci() {
 
             </div>
         </div>
+
     );
 }
 
@@ -39,7 +36,7 @@ function Fibonacci() {
  * @returns A React component
  */
 const Fibonacchi = ({ num }) => {
-    const fib = [1, 1];
+    let fib = [1, 1];
     for (let i = 2; i < num; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
     }
@@ -47,9 +44,16 @@ const Fibonacchi = ({ num }) => {
     return (
         <div className='text-sm-left text-nowrap font-weight-bold'>
             <div className='text-sm-left text-nowrap font-weight-bold form-control-lg'>
-                {num} Fibonacchi serie: {fib.join(', ')}
+
+                <p> Número agregado:  {num}
+                    <br />
+                    Fibonacchi serie: {fib.join(', ')}
+
+                </p>
             </div>
         </div>
+
+
     );
 }
 
