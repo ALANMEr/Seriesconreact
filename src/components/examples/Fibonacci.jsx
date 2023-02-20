@@ -14,6 +14,7 @@ function Fibonacci() {
         <div className='container testimonial-section" input-group mb-3 .container-sm container text-center w-50 p-3 ' id="about">
             <div className="row align-self-end">
                 <input
+                id='fibo'
                     type="number" className="form-control"
                     placeholder="Escribe número"
                     aria-label="Username"

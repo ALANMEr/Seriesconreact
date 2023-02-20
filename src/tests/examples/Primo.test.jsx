@@ -1,10 +1,12 @@
-test('Esta es una prueba de la serie de Primo', () => {
-    ///Inializacion
 
+import { Primo } from '../../components/examples/Primo'
+import { render, screen } from "@testing-library/react";
 
-    ////estimulo
+describe('Esta es una prueba de la serie de Primo', () => {
 
-
-    ///comporamiento
-
-})
+    test('Piramide', () => {
+        render(<Primo />);
+        const input = screen.getByRole("textbox")
+        expect(input.value).toBe(1)
+    })
+});
