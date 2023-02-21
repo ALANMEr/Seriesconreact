@@ -15,7 +15,7 @@ export const Primo = () => {
                 <input
                     type="number" className="form-control"
                     placeholder="Escribe número"
-                    aria-label="Username"
+                    aria-label="name"
                     aria-describedby="addon-wrapping"
                     min={0}
                     value={lista || ''}

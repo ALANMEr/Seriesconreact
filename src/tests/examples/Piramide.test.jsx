@@ -7,7 +7,7 @@ describe('Esta es una prueba de la serie de Piramide', () => {
     test('Piramide', () => {
         render(<Piramide />);
         const input = screen.getByRole("textbox")
-        expect(input.value).toBe(1)
+        expect(input.value).toBe("12345")
 
     })
 });
